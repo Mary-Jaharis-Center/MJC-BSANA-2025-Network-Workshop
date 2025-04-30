@@ -7,7 +7,7 @@ Network analysis allows researchers to model and visualize the connections and i
   
   This session will introduce the ways in which historical disciplines use networks and network analysis broadly and consider some existing projects. This introduction will be followed by a demonstration and discussion of the [Russian Genealogical Database](https://www.gis.huri.harvard.edu/rus-genealogy). The discussion will focus on the methodology for gathering and inputting data, as well as how the data is stored and utilized for its network analysis capabilities on the web.
 
-  - [Slides] (https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Raffensperger%20Slides.pdf))
+  - [Slides] (https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Raffensperger%20Slides.pdf)
 
 - **Monday, May 12, 2:00 pm–4:00 pm (EDT): Practical Session I: Data with Ryan Horne**
   
