@@ -5,7 +5,7 @@ Network analysis allows researchers to model and visualize the connections and i
 # Course Outline
 - **Monday, May 12, 10:00 am–12:00 pm (EDT): Network Analysis in Historical Disciplines with Christian Raffensperger**
   
-  This session will introduce the ways in which historical disciplines use networks and network analysis broadly and consider some existing projects. This introduction will be followed by a demonstration and discussion of the Russian Genealogical Database. The discussion will focus on the methodology for gathering and inputting data, as well as how the data is stored and utilized for its network analysis capabilities on the web.
+  This session will introduce the ways in which historical disciplines use networks and network analysis broadly and consider some existing projects. This introduction will be followed by a demonstration and discussion of the [Russian Genealogical Database](https://www.gis.huri.harvard.edu/rus-genealogy). The discussion will focus on the methodology for gathering and inputting data, as well as how the data is stored and utilized for its network analysis capabilities on the web.
 
 - **Monday, May 12, 2:00 pm–4:00 pm (EDT): Practical Session I: Data with Ryan Horne**
   
@@ -17,11 +17,11 @@ Network analysis allows researchers to model and visualize the connections and i
 
 - **Tuesday, May 13, 2:00 pm–4:00 pm (EDT): Practical Session II: Neo4j Basics with Ryan Horne**
   
-  This session will begin by presenting an overview of the different tools and database options available for network analysis. Participants will then learn the basics of Neo4j and bring their data into the Neo4j environment.
+  This session will begin by presenting an overview of the different tools and database options available for network analysis. Participants will then learn the basics of [Neo4j](https://neo4j.com/product/neo4j-graph-database/) and bring their data into the Neo4j environment.
 
 - **Wednesday, May 14, 9:30 am–11:30 am (EDT): Network Analysis in Archaeology: Theory, Practice, and Applications (II) with Katerina Ragkou**
 
-  This practical session will demonstrate how to build a network analysis database using data from an ongoing research project. Participants will have the opportunity to discuss their own datasets and learn how to apply network analysis using Visone software for data visualization and analysis.
+  This practical session will demonstrate how to build a network analysis database using data from an ongoing research project. Participants will have the opportunity to discuss their own datasets and learn how to apply network analysis using [Visone](https://visone.ethz.ch/) software for data visualization and analysis.
 
 - **Wednesday, May 14, 2:00 pm–4:00 pm (EDT): Practical Session III: Querying Your Data with Ryan Horne**
   
@@ -29,7 +29,7 @@ Network analysis allows researchers to model and visualize the connections and i
 
 - **Thursday, May 15, 10am–12:30pm (EDT): Network Analysis and Prosopography with Zachary Chitwood**
   
-  This session will demonstrate both network analysis and prosopography through the case study of the MAMEMS (“Mount Athos in Medieval Eastern Mediterranean Society: Contextualizing the History of a Monastic Republic (ca. 850-1550)”) project. The project objectives include the construction of a prosopographical database containing all Mount Athos-related persons over the course of the Middle Ages. The session will treat problems of prosopography more generally and Byzantine prosopography in particular. Following this introduction, the specific challenges of creating an Athonite prosopography with source material that is unique both in its linguistic diversity (with substantial Greek, Slavonic, Georgian, and Ottoman material) and type (the largest surviving collection of commemorative lists in the premodern Orthodox world) will be discussed. The session will conclude with a live demonstration of the software OpenAtlas.
+  This session will demonstrate both network analysis and prosopography through the case study of the [MAMEMS (“Mount Athos in Medieval Eastern Mediterranean Society: Contextualizing the History of a Monastic Republic (ca. 850-1550)”) project](https://discover-mamems.openatlas.eu/). The project objectives include the construction of a prosopographical database containing all Mount Athos-related persons over the course of the Middle Ages. The session will treat problems of prosopography more generally and Byzantine prosopography in particular. Following this introduction, the specific challenges of creating an Athonite prosopography with source material that is unique both in its linguistic diversity (with substantial Greek, Slavonic, Georgian, and Ottoman material) and type (the largest surviving collection of commemorative lists in the premodern Orthodox world) will be discussed. The session will conclude with a live demonstration of the software [OpenAtlas](https://openatlas.eu/).
 
 - **Thursday, May 15, 2:00 pm–4:00 pm (EDT): Practical Session IV: More Complex Operations with Ryan Horne**
 
@@ -37,7 +37,7 @@ Network analysis allows researchers to model and visualize the connections and i
 
 - **Friday, May 16, 10:00 am–12:00 pm (EDT): Network Analysis and Art History with Alexander Brey**
 
-  This session will introduce participants to network analysis in art history through the case study of Manuscript Connections, a digital humanities project analyzing relationships among European medieval manuscripts. The discussion will focus on how Temporal Network Analysis and Similarity Metrics can reveal patterns of production, transmission, and reuse across time and space. Emphasis will be placed on the project's methods and, to a lesser extent, tools, including the use of Cytoscape and R for analyzing networks and calculating similarity metrics. While focused on medieval French, Flemish, and English manuscripts from an art historical perspective, the approaches presented are readily transferable.
+  This session will introduce participants to network analysis in art history through the case study of Manuscript Connections, a digital humanities project analyzing relationships among European medieval manuscripts. The discussion will focus on how Temporal Network Analysis and Similarity Metrics can reveal patterns of production, transmission, and reuse across time and space. Emphasis will be placed on the project's methods and, to a lesser extent, tools, including the use of [Cytoscape](https://cytoscape.org/) and [R](https://www.r-project.org/) for analyzing networks and calculating similarity metrics. While focused on medieval French, Flemish, and English manuscripts from an art historical perspective, the approaches presented are readily transferable.
 
 - **Friday, May 16, 2:00 pm–4:00 pm (EDT): Practical Session V: Publishing Your Network Analysis with Ryan Horne**
 
