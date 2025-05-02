@@ -59,7 +59,7 @@ Network analysis allows researchers to model and visualize the connections and i
 - Do a bit of reading
   
   You may find it helpful to do a spot of reading ahead of the workshop to familiarize yourself with the basic ideas and vocabulary used in network analysis. **Quick Reads** in the Resources section of this page will direct you to a series of blog posts that cover the basics.
--Setup a second screen if you have access to one.
+- Setup a second screen if you have access to one.
 # Resources
 - [Finding Data](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Finding_Data.pdf)
 - [Introductory Bibliography](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Introductory_Bibliography.pdf)
