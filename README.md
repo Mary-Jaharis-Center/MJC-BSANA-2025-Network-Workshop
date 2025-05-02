@@ -46,4 +46,4 @@ Network analysis allows researchers to model and visualize the connections and i
   This session will focus on publishing a network analysis. Participants will discuss effective data visualization techniques for print and digital systems. Options for creating network interactions, embedding them into webpages, and using data repositories effectively will be presented.
 # Workshop Preparation
 - Download and install the following software
--   [Cytoscape](https://cytoscape.org/download.html)
+  - [Cytoscape](https://cytoscape.org/download.html)
