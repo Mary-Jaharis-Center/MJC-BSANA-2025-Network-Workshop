@@ -44,3 +44,6 @@ Network analysis allows researchers to model and visualize the connections and i
 - **Friday, May 16, 2:00 pm–4:00 pm (EDT): Practical Session V: Publishing Your Network Analysis with Ryan Horne**
 
   This session will focus on publishing a network analysis. Participants will discuss effective data visualization techniques for print and digital systems. Options for creating network interactions, embedding them into webpages, and using data repositories effectively will be presented.
+# Workshop Preparation
+- Download and install the following software
+-   [Cytoscape](https://cytoscape.org/download.html)
