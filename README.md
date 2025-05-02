@@ -47,3 +47,5 @@ Network analysis allows researchers to model and visualize the connections and i
 # Workshop Preparation
 - Download and install the following software
   - [Cytoscape](https://cytoscape.org/download.html)
+  - [Neo4j Desktop](https://neo4j.com/deployment-center/) (scroll down the page)
+  - [Visone](https://visone.ethz.ch/html/download.html)
