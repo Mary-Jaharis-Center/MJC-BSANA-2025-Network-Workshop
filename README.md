@@ -50,10 +50,12 @@ Network analysis allows researchers to model and visualize the connections and i
   - [Neo4j Desktop](https://neo4j.com/deployment-center/) (scroll down the page)
   - [Visone](https://visone.ethz.ch/html/download.html)
 - Collect your data
+  
   To participate in this workshop, you need to bring data. At the minimum, you will need 20 pieces of data. More is fine! Ideally, the data will in some way represent connections/relationships. These connections can be social (between people), economic (between entities/places), intellectual (correspondence, for example). Your data can be in any form.
 
   If you are not at the stage that you have your own data, please compile some data that is relevant to your discipline (archaeology, art history, history, philology...) or download a dataset to use for the workshop.
 
   Anyone looking for data may consult **Finding Data** in the Resources section of this page. If you are uncertain about what data to collect, you may want to take a look at a few of the articles, bibliographies, and resources listed in the **Introductory Bibliography** in the Resources section of this page.
 - Do a bit of reading
+  
   You may find it helpful to do a spot of reading ahead of the workshop to familiarize yourself with the basic ideas and vocabulary used in network analysis. **Quick Reads** in the Resources section of this page will direct you to a series of blog posts that cover the basics. 
