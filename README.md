@@ -51,7 +51,7 @@ Network analysis allows researchers to model and visualize the connections and i
   - [Visone](https://visone.ethz.ch/html/download.html)
 - Collect your data
   
-  To participate in this workshop, you need to bring data. At the minimum, you will need 20 pieces of data. More is fine! Ideally, the data will in some way represent connections/relationships. These connections can be social (between people), economic (between entities/places), intellectual (correspondence, for example). Your data can be in any form.
+  To participate in this workshop, you MUST bring data. At the minimum, you will need 20 pieces of data. More is fine! Ideally, the data will in some way represent connections/relationships. These connections can be social (between people), economic (between entities/places), intellectual (correspondence, for example). Your data can be in any form.
 
   If you are not at the stage that you have your own data, please compile some data that is relevant to your discipline (archaeology, art history, history, philology...) or download a dataset to use for the workshop.
 
