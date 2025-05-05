@@ -11,7 +11,7 @@ Network analysis allows researchers to model and visualize the connections and i
 
 - **Monday, May 12, 2:00 pm–4:00 pm (EDT): Practical Session I: Data with Ryan Horne**
   
-  This session will focus on network analysis, network fundamentals, and data modeling for networks. Participants will learn how to transform their data into a format and style suitable for network analysis. Linked Open Data resources, vocabularies, and ontologies that can help top guide participants through the data modeling process will be introduced.
+  This session will focus on network analysis, network fundamentals, and data modeling for networks. Participants will learn how to transform their data into a format and style suitable for network analysis. Linked Open Data resources, vocabularies, and ontologies that can help to guide participants through the data modeling process will be introduced.
 
 - **Tuesday, May 13, 9:30 am–11:30 am (EDT): Network Analysis in Archaeology: Theory, Practice, and Applications (I) with Katerina Ragkou**
   
