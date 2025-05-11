@@ -23,7 +23,7 @@ Network analysis allows researchers to model and visualize the connections and i
   
   This session will begin by presenting an overview of the different tools and database options available for network analysis. Participants will then learn the basics of [Neo4j](https://neo4j.com/product/neo4j-graph-database/) and bring their data into the Neo4j environment.
 
-  -[Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session%20II_%20Neo4j.pdf)
+    -[Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session%20II_%20Neo4j.pdf)
 
 - **Wednesday, May 14, 9:30 am–11:30 am (EDT): Network Analysis in Archaeology: Theory, Practice, and Applications (II) with Katerina Ragkou**
 
