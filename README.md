@@ -13,6 +13,8 @@ Network analysis allows researchers to model and visualize the connections and i
   
   This session will focus on network analysis, network fundamentals, and data modeling for networks. Participants will learn how to transform their data into a format and style suitable for network analysis. Linked Open Data resources, vocabularies, and ontologies that can help to guide participants through the data modeling process will be introduced.
 
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session%20I_%20Data.pdf)
+
 - **Tuesday, May 13, 9:30 am–11:30 am (EDT): Network Analysis in Archaeology: Theory, Practice, and Applications (I) with Katerina Ragkou**
   
   This session will explore the theoretical underpinnings and practical applications of network analysis in archaeology, using case studies from the Eastern Mediterranean and the Peloponnese during the medieval period to illustrate its potential for revealing new insights into past societies.
@@ -20,6 +22,8 @@ Network analysis allows researchers to model and visualize the connections and i
 - **Tuesday, May 13, 2:00 pm–4:00 pm (EDT): Practical Session II: Neo4j Basics with Ryan Horne**
   
   This session will begin by presenting an overview of the different tools and database options available for network analysis. Participants will then learn the basics of [Neo4j](https://neo4j.com/product/neo4j-graph-database/) and bring their data into the Neo4j environment.
+
+  -[Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session%20II_%20Neo4j.pdf)
 
 - **Wednesday, May 14, 9:30 am–11:30 am (EDT): Network Analysis in Archaeology: Theory, Practice, and Applications (II) with Katerina Ragkou**
 
