@@ -19,6 +19,8 @@ Network analysis allows researchers to model and visualize the connections and i
   
   This session will explore the theoretical underpinnings and practical applications of network analysis in archaeology, using case studies from the Eastern Mediterranean and the Peloponnese during the medieval period to illustrate its potential for revealing new insights into past societies.
 
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Ragkou_session_1.pdf)
+
 - **Tuesday, May 13, 2:00 pm–4:00 pm (EDT): Practical Session II: Neo4j Basics with Ryan Horne**
   
   This session will begin by presenting an overview of the different tools and database options available for network analysis. Participants will then learn the basics of [Neo4j](https://neo4j.com/product/neo4j-graph-database/) and bring their data into the Neo4j environment.
