@@ -40,6 +40,7 @@ Network analysis allows researchers to model and visualize the connections and i
 
   - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III.pdf)
   - [Data](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III_Data.zip)
+  - [Script](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/basic-script.txt)
 
 - **Thursday, May 15, 10am–12:30pm (EDT): Network Analysis and Prosopography with Zachary Chitwood**
   
