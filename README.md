@@ -38,6 +38,9 @@ Network analysis allows researchers to model and visualize the connections and i
   
   During this session, participants will continue to work with their Neo4j database, with an emphasis on creating queries. Participants will learn how to do graph traversals, how to identify different communities and subsets in their data, and how to perform complex operations.
 
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III.pdf)
+  - [Data](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III_Data.zip)
+
 - **Thursday, May 15, 10am–12:30pm (EDT): Network Analysis and Prosopography with Zachary Chitwood**
   
   This session will demonstrate both network analysis and prosopography through the case study of the [MAMEMS (“Mount Athos in Medieval Eastern Mediterranean Society: Contextualizing the History of a Monastic Republic (ca. 850-1550)”) project](https://discover-mamems.openatlas.eu/). The project objectives include the construction of a prosopographical database containing all Mount Athos-related persons over the course of the Middle Ages. The session will treat problems of prosopography more generally and Byzantine prosopography in particular. Following this introduction, the specific challenges of creating an Athonite prosopography with source material that is unique both in its linguistic diversity (with substantial Greek, Slavonic, Georgian, and Ottoman material) and type (the largest surviving collection of commemorative lists in the premodern Orthodox world) will be discussed. The session will conclude with a live demonstration of the software [OpenAtlas](https://openatlas.eu/).
