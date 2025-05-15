@@ -41,6 +41,7 @@ Network analysis allows researchers to model and visualize the connections and i
   - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III.pdf)
   - [Data](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_III_Data.zip)
   - [Script](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/basic-script.txt)
+  - [Pleiades Code](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/pleiades_code.txt)
 
 - **Thursday, May 15, 10am–12:30pm (EDT): Network Analysis and Prosopography with Zachary Chitwood**
   
@@ -51,6 +52,8 @@ Network analysis allows researchers to model and visualize the connections and i
 - **Thursday, May 15, 2:00 pm–4:00 pm (EDT): Practical Session IV: More Complex Operations with Ryan Horne**
 
   This session will continue the discussion of complex Neo4j and graph database operations, with an emphasis on spatial reasoning and analysis. It will conclude with an overview of types of software and other tools that can interface with Neo4j databases.
+
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_IV.pdf)
 
 - **Friday, May 16, 10:00 am–12:00 pm (EDT): Network Analysis and Art History with Alexander Brey**
 
