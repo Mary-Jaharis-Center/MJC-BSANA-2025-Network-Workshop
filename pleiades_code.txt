@@ -1,0 +1,582 @@
+
+# Build a database from CSV files
+## Import from directory for neo4j
+
+```{cypher}
+
+// Import archaeological_remains.csv
+LOAD CSV WITH HEADERS FROM 'file:///archaeological_remains.csv' AS row
+CREATE (:ArchaeologicalRemains {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import languages_and_scripts.csv
+LOAD CSV WITH HEADERS FROM 'file:///languages_and_scripts.csv' AS row
+CREATE (:LanguagesAndScripts {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import place_types.csv
+LOAD CSV WITH HEADERS FROM 'file:///place_types.csv' AS row
+CREATE (:PlaceTypes {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import association_certainty.csv
+LOAD CSV WITH HEADERS FROM 'file:///association_certainty.csv' AS row
+CREATE (:AssociationCertainty {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import location_linestrings.csv
+LOAD CSV WITH HEADERS FROM 'file:///location_linestrings.csv' AS row
+CREATE (:LocationLinestrings {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    place_id: row.place_id,
+    accuracy_assessment_uri: row.accuracy_assessment_uri,
+    accuracy_radius: row.accuracy_radius,
+    archaeological_remains: row.archaeological_remains,
+    association_certainty: row.association_certainty,
+    geometry_wkt: row.geometry_wkt,
+    year_after_which: row.year_after_which,
+    year_before_which: row.year_before_which,
+    location_precision: row.location_precision
+});
+
+// Import name_types.csv
+LOAD CSV WITH HEADERS FROM 'file:///name_types.csv' AS row
+CREATE (:NameTypes {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import transcription_accuracy.csv
+LOAD CSV WITH HEADERS FROM 'file:///transcription_accuracy.csv' AS row
+CREATE (:TranscriptionAccuracy {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import places_place_types.csv
+LOAD CSV WITH HEADERS FROM 'file:///places_place_types.csv' AS row
+CREATE (:PlacesPlaceTypes {
+    place_id: row.place_id,
+    place_type: row.place_type
+});
+
+// Import places.csv
+LOAD CSV WITH HEADERS FROM 'file:///places.csv' AS row
+CREATE (:Places {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    representative_latitude: row.representative_latitude,
+    representative_longitude: row.representative_longitude,
+    bounding_box_wkt: row.bounding_box_wkt,
+    location_precision: row.location_precision
+});
+
+// Import connections.csv
+LOAD CSV WITH HEADERS FROM 'file:///connections.csv' AS row
+CREATE (:Connections {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    place_id: row.place_id,
+    connection_type: row.connection_type,
+    connects_to: row.connects_to,
+    association_certainty: row.association_certainty,
+    year_after_which: row.year_after_which,
+    year_before_which: row.year_before_which
+});
+
+// Import names.csv
+LOAD CSV WITH HEADERS FROM 'file:///names.csv' AS row
+CREATE (:Names {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    place_id: row.place_id,
+    name_type: row.name_type,
+    language_tag: row.language_tag,
+    attested_form: row.attested_form,
+    romanized_form_1: row.romanized_form_1,
+    romanized_form_2: row.romanized_form_2,
+    romanized_form_3: row.romanized_form_3,
+    association_certainty: row.association_certainty,
+    transcription_accuracy: row.transcription_accuracy,
+    transcription_completeness: row.transcription_completeness,
+    year_after_which: row.year_after_which,
+    year_before_which: row.year_before_which
+});
+
+// Import connection_types.csv
+LOAD CSV WITH HEADERS FROM 'file:///connection_types.csv' AS row
+CREATE (:ConnectionTypes {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import location_points.csv
+LOAD CSV WITH HEADERS FROM 'file:///location_points.csv' AS row
+CREATE (:LocationPoints {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    place_id: row.place_id,
+    accuracy_assessment_uri: row.accuracy_assessment_uri,
+    accuracy_radius: row.accuracy_radius,
+    archaeological_remains: row.archaeological_remains,
+    association_certainty: row.association_certainty,
+    geometry_wkt: row.geometry_wkt,
+    year_after_which: row.year_after_which,
+    year_before_which: row.year_before_which,
+    location_precision: row.location_precision
+});
+
+// Import location_polygons.csv
+LOAD CSV WITH HEADERS FROM 'file:///location_polygons.csv' AS row
+CREATE (:LocationPolygons {
+    created: row.created,
+    description: row.description,
+    details: row.details,
+    provenance: row.provenance,
+    title: row.title,
+    uri: row.uri,
+    id: row.id,
+    place_id: row.place_id,
+    accuracy_assessment_uri: row.accuracy_assessment_uri,
+    accuracy_radius: row.accuracy_radius,
+    archaeological_remains: row.archaeological_remains,
+    association_certainty: row.association_certainty,
+    geometry_wkt: row.geometry_wkt,
+    year_after_which: row.year_after_which,
+    year_before_which: row.year_before_which,
+    location_precision: row.location_precision
+});
+
+// Import transcription_completeness.csv
+LOAD CSV WITH HEADERS FROM 'file:///transcription_completeness.csv' AS row
+CREATE (:TranscriptionCompleteness {
+    key: row.key,
+    term: row.term,
+    definition: row.definition
+});
+
+// Import time_periods.csv
+LOAD CSV WITH HEADERS FROM 'file:///time_periods.csv' AS row
+CREATE (:TimePeriods {
+    key: row.key,
+    term: row.term,
+    definition: row.definition,
+    lower_bound: row.lower_bound,
+    upper_bound: row.upper_bound,
+    same_as: row.same_as
+});
+
+```
+
+
+## create an index
+
+```{cypher}
+CREATE INDEX FOR (p:Places) ON (p.id)
+
+```
+
+
+
+## Places to Names
+
+```{cypher}
+
+// Create relationships between places and names nodes (case-insensitive, excluding null/empty strings, with explicit string casting)
+MATCH (p:Places), (l:Names)
+WHERE 
+  // Ensure p.id is not null or empty and cast to string
+  toLower(COALESCE(toString(p.id), '')) <> '' AND
+  // Ensure l.place_id is not null or empty and cast to string
+  toLower(COALESCE(toString(l.place_id), '')) <> '' AND
+  // Ensure p.id matches l.place_id (case-insensitive, after casting to string)
+  toLower(COALESCE(toString(p.id), '')) = toLower(COALESCE(toString(l.place_id), ''))
+CREATE (p)-[:HAS_NAME]->(l)
+RETURN p.id AS PlaceID, l.place_id AS LocationLinestringPlaceID, 'has name' AS RelationshipType
+LIMIT 10;
+
+```
+
+## Places to line strings
+
+```{cypher}
+
+// Create relationships between places and location_linestring nodes (case-insensitive, excluding null/empty strings, with explicit string casting)
+MATCH (p:Places), (l:LocationLinestrings)
+WHERE 
+  // Ensure p.id is not null or empty and cast to string
+  toLower(COALESCE(toString(p.id), '')) <> '' AND
+  // Ensure l.place_id is not null or empty and cast to string
+  toLower(COALESCE(toString(l.place_id), '')) <> '' AND
+  // Ensure p.id matches l.place_id (case-insensitive, after casting to string)
+  toLower(COALESCE(toString(p.id), '')) = toLower(COALESCE(toString(l.place_id), ''))
+CREATE (p)-[:HAS_LINESTRING_LOCATION]->(l)
+RETURN p.id AS PlaceID, l.place_id AS LocationLinestringPlaceID, 'has location' AS RelationshipType
+LIMIT 10;
+
+
+```
+
+
+## Places to polygons
+
+```{cypher}
+
+// Create relationships between places and location_polygons nodes (case-insensitive, excluding null/empty strings, with explicit string casting)
+MATCH (p:Places), (l:LocationPolygons)
+WHERE 
+  // Ensure p.id is not null or empty and cast to string
+  toLower(COALESCE(toString(p.id), '')) <> '' AND
+  // Ensure l.place_id is not null or empty and cast to string
+  toLower(COALESCE(toString(l.place_id), '')) <> '' AND
+  // Ensure p.id matches l.place_id (case-insensitive, after casting to string)
+  toLower(COALESCE(toString(p.id), '')) = toLower(COALESCE(toString(l.place_id), ''))
+CREATE (p)-[:HAS_POLYGON_LOCATION]->(l)
+RETURN p.id AS PlaceID, l.place_id AS LocationPolygonPlaceID, 'has location' AS RelationshipType
+LIMIT 10;
+
+
+```
+
+## Places to points
+
+```{cypher}
+
+// Create relationships between places and location_points nodes (case-insensitive, excluding null/empty strings, with explicit string casting)
+MATCH (p:Places), (l:LocationPoints)
+WHERE 
+  // Ensure p.id is not null or empty and cast to string
+  toLower(COALESCE(toString(p.id), '')) <> '' AND
+  // Ensure l.place_id is not null or empty and cast to string
+  toLower(COALESCE(toString(l.place_id), '')) <> '' AND
+  // Ensure p.id matches l.place_id (case-insensitive, after casting to string)
+  toLower(COALESCE(toString(p.id), '')) = toLower(COALESCE(toString(l.place_id), ''))
+CREATE (p)-[:HAS_POINT_LOCATION]->(l)
+RETURN p.id AS PlaceID, l.place_id AS LocationPointPlaceID, 'has location' AS RelationshipType
+LIMIT 10;
+
+
+```
+
+
+
+## Names to association_certainty remove  association_certainty
+
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:Names), (t:AssociationCertainty)
+WHERE 
+  toLower(COALESCE(n.association_certainty, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.association_certainty, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_ASSOCIATION_CERTAINTY]->(t)
+RETURN n.association_certainty AS AssociationCertainty, t.key AS key, 'has AssociationCertainty' AS RelationshipType
+LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:Names)
+REMOVE n.association_certainty;
+
+```
+
+## Names to languages and scripts remove languages and scripts
+
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:Names), (t:LanguagesAndScripts)
+WHERE 
+  toLower(COALESCE(n.language_tag, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.language_tag, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_LANGUAGE]->(t)
+RETURN n.language_tag AS LaguageType, t.key AS NAMEKEY, 'has language type' AS RelationshipType
+LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:Names)
+REMOVE n.language_tag;
+
+
+```
+
+## Names to nametypes remove nametypes
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:Names), (t:NameTypes)
+WHERE 
+  toLower(COALESCE(n.name_type, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.name_type, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.name_type AS NameType, t.key AS NAMEKEY, 'has name type' AS RelationshipType
+LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:Names)
+REMOVE n.name_type;
+
+
+```
+
+
+## Names to trascription accuracy remove trascription accuracy
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:Names), (t:TranscriptionAccuracy)
+WHERE 
+  toLower(COALESCE(n.transcription_accuracy, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.transcription_accuracy, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.transcription_accuracy AS transcription_accuracy, t.key AS NAMEKEY, 'has transcription_accuracy' AS RelationshipType
+LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:Names)
+REMOVE n.transcription_accuracy;
+
+
+```
+
+
+## Names to transcription_completeness remove transcription_completeness
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:Names), (t:TranscriptionCompleteness)
+WHERE 
+  toLower(COALESCE(n.transcription_completeness, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.transcription_completeness, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.transcription_completeness AS transcription_completeness, t.key AS NAMEKEY, 'has transcription_completeness' AS RelationshipType
+LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:Names)
+REMOVE n.transcription_completeness;
+
+
+```
+
+## location_linestrings to archaeological_remains remove archaeological_remains
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationLinestrings), (t:ArchaeologicalRemains)
+WHERE 
+  toLower(COALESCE(n.archaeological_remains, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.archaeological_remains, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.archaeological_remains AS archaeological_remains, t.key AS NAMEKEY, 'has archaeological_remains' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationLinestrings)
+REMOVE n.archaeological_remains;
+
+
+```
+
+## location_linestrings to association_certainty remove  association_certainty
+
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationLinestrings), (t:AssociationCertainty)
+WHERE 
+  toLower(COALESCE(n.association_certainty, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.association_certainty, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_ASSOCIATION_CERTAINTY]->(t)
+RETURN n.association_certainty AS AssociationCertainty, t.key AS key, 'has AssociationCertainty' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationLinestrings)
+REMOVE n.association_certainty;
+
+```
+
+
+## location_points to archaeological_remains remove archaeological_remains
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationPoints), (t:ArchaeologicalRemains)
+WHERE 
+  toLower(COALESCE(n.archaeological_remains, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.archaeological_remains, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.archaeological_remains AS archaeological_remains, t.key AS NAMEKEY, 'has archaeological_remains' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationPoints)
+REMOVE n.archaeological_remains;
+
+
+```
+
+## location_points to association_certainty remove  association_certainty
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationPoints), (t:AssociationCertainty)
+WHERE 
+  toLower(COALESCE(n.association_certainty, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.association_certainty, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_ASSOCIATION_CERTAINTY]->(t)
+RETURN n.association_certainty AS AssociationCertainty, t.key AS key, 'has AssociationCertainty' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationPoints)
+REMOVE n.association_certainty;
+
+```
+
+
+
+## location_polygons to archaeological_remains remove archaeological_remains
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationPolygons), (t:ArchaeologicalRemains)
+WHERE 
+  toLower(COALESCE(n.archaeological_remains, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.archaeological_remains, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_NAME_TYPE]->(t)
+RETURN n.archaeological_remains AS archaeological_remains, t.key AS NAMEKEY, 'has archaeological_remains' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationPolygons)
+REMOVE n.archaeological_remains;
+
+
+```
+
+## location_polygons to association_certainty remove  association_certainty
+
+```{cypher}
+
+// Create relationships between names and association certainty nodes (case-insensitive, excluding null/blank values)
+MATCH (n:LocationPolygons), (t:AssociationCertainty)
+WHERE 
+  toLower(COALESCE(n.association_certainty, '')) <> '' AND
+  toLower(COALESCE(t.key, '')) <> '' AND
+  toLower(COALESCE(n.association_certainty, '')) = toLower(COALESCE(t.key, ''))
+CREATE (n)-[:HAS_ASSOCIATION_CERTAINTY]->(t)
+RETURN n.association_certainty AS AssociationCertainty, t.key AS key, 'has AssociationCertainty' AS RelationshipType LIMIT 10;
+
+// Now remove the property in a separate statement
+MATCH (n:LocationPolygons)
+REMOVE n.association_certainty;
+
+```
+
+## Connections
+
+```{cypher}
+
+MATCH (p1:Places), (p2:Places), (c:Connections), (ct:ConnectionTypes)
+WHERE 
+  toLower(trim(p1.id)) = toLower(trim(c.place_id)) AND    // Source place is matched by the place_id of the connection (case-insensitive, trimmed)
+  toLower(trim(p2.uri)) = toLower(trim(c.connects_to)) AND    // Target place is matched by the connects_to property of the connection (case-insensitive, trimmed)
+  toLower(trim(COALESCE(c.connection_type, ''))) = toLower(trim(COALESCE(ct.key, '')))    // Match the connection type to ConnectionType key (case-insensitive, trimmed)
+CREATE (p1)-[newConn:HAS_CONNECTION]->(p2)    // Create the new connection from place to place
+SET newConn += c,    // Set all properties of the original connection on the new connection
+    newConn.connection_type = c.connection_type  // Ensure the connection type property is set in Neo4j conventions
+RETURN p1.id AS SourcePlaceID, p2.id AS TargetPlaceID, newConn.connection_type AS ConnectionType;
+
+
+```
+
+
+## Match places to place types
+
+```{cypher}
+
+MATCH (place:Places), (placeType:PlaceTypes)
+WITH place, placeType
+MATCH (ppt:PlacesPlaceTypes)
+WHERE 
+  ppt.place_id IS NOT NULL AND 
+  ppt.place_type IS NOT NULL AND
+  toString(ppt.place_id) <> "" AND 
+  toString(ppt.place_type) <> ""
+  AND toLower(trim(toString(ppt.place_id))) = toLower(trim(toString(place.id)))
+  AND toLower(trim(toString(ppt.place_type))) = toLower(trim(toString(placeType.key)))
+MERGE (place)-[:HAS_TYPE]->(placeType)
+RETURN place, placeType
+
+
+```
+
+## Find places that have connections
+
+```{cypher}
+
+
+MATCH (place:Places)
+WHERE place.id IN ["177302800", "45635759"]
+MATCH (place)-[:HAS_CONNECTION]-(connectedPlace:Places)
+RETURN place, connectedPlace
+
+
+```
