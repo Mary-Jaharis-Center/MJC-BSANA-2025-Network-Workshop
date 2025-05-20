@@ -59,9 +59,13 @@ Network analysis allows researchers to model and visualize the connections and i
 
   This session will introduce participants to network analysis in art history through the case study of _Manuscript Connections_, a digital humanities project analyzing relationships among European medieval manuscripts. The discussion will focus on how Temporal Network Analysis and Similarity Metrics can reveal patterns of production, transmission, and reuse across time and space. Emphasis will be placed on the project's methods and, to a lesser extent, tools, including the use of [Cytoscape](https://cytoscape.org/) and [R](https://www.r-project.org/) for analyzing networks and calculating similarity metrics. While focused on medieval French, Flemish, and English manuscripts from an art historical perspective, the approaches presented are readily transferable.
 
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Brey_Slides_Abbreviated.pdf)
+
 - **Friday, May 16, 2:00 pm–4:00 pm (EDT): Practical Session V: Publishing Your Network Analysis with Ryan Horne**
 
   This session will focus on publishing a network analysis. Participants will discuss effective data visualization techniques for print and digital systems. Options for creating network interactions, embedding them into webpages, and using data repositories effectively will be presented.
+
+  -[Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_%20V.pdf)
 # Workshop Preparation
 - Download and install the following software
   - [Cytoscape](https://cytoscape.org/download.html)
