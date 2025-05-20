@@ -65,7 +65,7 @@ Network analysis allows researchers to model and visualize the connections and i
 
   This session will focus on publishing a network analysis. Participants will discuss effective data visualization techniques for print and digital systems. Options for creating network interactions, embedding them into webpages, and using data repositories effectively will be presented.
 
-  -[Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_%20V.pdf)
+  - [Slides](https://github.com/Mary-Jaharis-Center/MJC-BSANA-2025-Network-Workshop/blob/main/Practical_Session_%20V.pdf)
 # Workshop Preparation
 - Download and install the following software
   - [Cytoscape](https://cytoscape.org/download.html)
